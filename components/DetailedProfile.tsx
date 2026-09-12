@@ -72,3 +72,11 @@ export default function DetailedProfile({
     </div>
   );
 }
+
+// Answer to question:
+// DetailedProfile.tsx: displays my backend engineer's detailed bio for the About page, including my role, tech stack, a summary, a highlighted current project (ChessForge) with its features and status, and a closing note, all passed in as typed props.
+
+// Answer to Question asked:
+
+// 1. The Purpose of app/layout.tsx: It defines the shared root layout (HTML/body structure, global styles, fonts, metadata, and any persistent UI like a nav bar or footer) that wraps every page in the App Router, so common markup doesn't have to be repeated on each page.
+// 2. Why these are Server Components: They only render static/props-driven content — no state, effects, event handlers, or browser-only APIs. So there's no need to ship JS to the client or opt into "use client"; rendering them on the server keeps the client bundle smaller and lets Next.js render the HTML upfront.
