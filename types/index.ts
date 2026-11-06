@@ -3,12 +3,12 @@ export type ProjectCategory = "Backend" | "Full-stack" | "Tools & Practice";
 export interface Project {
   slug: string;
   title: string;
-  summary: string;
-  highlights: string[];
+  description: string;
   technologies: string[];
+  link?: string;
+  sourceUrl?: string;
+  highlights: string[];
   category: ProjectCategory;
-  repoUrl?: string;
-  liveUrl?: string;
 }
 
 export interface SkillGroup {
